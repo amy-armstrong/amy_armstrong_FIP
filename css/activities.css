@@ -1,0 +1,406 @@
+body {
+    color: #626262;
+    font-family: 'Sanchez', 'Times New Roman', serif;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+  }
+  
+  
+  input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .cr-red {
+    color: #9a2018;
+  }
+  
+  
+  /* 2. ---Main Nav--- */
+  
+  
+  #main-nav label img {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .5s ease;
+    margin-bottom: 20px;
+  }
+  
+  
+  #main-nav input, #burger-con {
+    display: none;
+  }
+  
+  
+  /* ~ sibling selector */
+  
+  
+  #main-nav input:checked ~ #burger-con {
+    display: block;
+  }
+  
+  
+  #main-nav input:checked ~ label img {
+    transform: rotate(90deg);
+  }
+  
+  
+  #main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  #main-nav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #626262;
+  }
+  
+  
+  #main-nav ul li {
+    border-bottom: 1px solid #efefef;
+  }
+  
+  
+  #main-nav ul li:first-child {
+    border-top: 1px solid #efefef;
+  }
+  
+  
+  #main-nav ul li:last-child {
+    margin-bottom: 40px;
+  }
+  
+  
+  #logo {
+    margin-bottom: 20px;
+    max-width: 382px;
+  }
+  
+  
+  /* 3. ---Main Hero Image--- */
+  
+  
+  #hero {
+    background: url(../images/forest_cr.png) no-repeat; 
+    height: 200px;
+    
+  }
+
+  
+  .hero-img-h2 span, .hero-img-h3 span {
+    color: #9a2018;
+    font-size: 12px;
+
+  }
+  
+  
+  .book-now {
+    background-color: #9a2018;
+    color: #fff;
+    font-size: 16px;
+    transition: all 500ms linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    cursor: pointer;
+  }
+  
+  
+  .book-now:hover {
+    background-color: rgb(196, 28, 28);
+  }
+  
+  
+  #book-now-hero {
+    height: 67px;
+  }
+  
+  
+  #hero-heading-box {
+    align-self: end;
+  }
+  
+  
+  .hero-img-h2, .hero-img-h3 {
+    background: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  
+  
+  .hero-img-h2 span, .hero-img-h3 span {
+    color: #9a2018;
+    font-size: 12px;
+  }
+  
+  
+  .line-separator {
+    margin-top: 20px;
+    border-top: solid 3px #CF6666;
+    padding-top: 20px;
+  }
+  
+  
+  #hero-summary p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+
+  .hero-heading-description {
+    font-size: 14px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  #list-items {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .image-grid {
+    display: flex;   
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));         
+    gap: 20px;                /* Space between images */
+    list-style: none;         /* Remove bullet points */
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px; /* Optional: limit width for better centering */
+  }
+
+
+  .image-grid img {
+    width: 120px;             /* Set desired image width */
+    height: 120px;            /* Set desired image height */
+    object-fit: cover;        /* Crop to fit nicely */
+    display: block;
+  }
+
+  .responsive-img {
+    max-width: 100%;
+    height: 300px;
+    display: block;
+
+  }
+
+  .small-text {
+    font-size: 11px;
+    color: #6f6e6e; /* optional for styling */
+    font-style: italic;
+  }
+  .numbered-list {
+    display: flex;
+    gap: 1rem;
+    background-color: #9a2018;
+    margin: 0;
+    list-style-type: none;
+    justify-content: center; /* centers the whole list */
+}
+
+ .numbered-list a{
+    color: white;
+    text-align: center;
+ }
+
+ .numbered-list a:hover {
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+ }
+
+.numbered-list li  {
+    color: #9a2018;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    display: flex;               /* makes the li content (the number) center inside */
+    align-items: center;         /* vertical center */
+    justify-content: center;     /* horizontal center */         /* makes it a circle */
+    text-align: center;
+    text-decoration: none;
+}
+
+.description-list {
+    font-size: 14px;
+}
+
+.park-description {
+    text-align: left;
+}
+
+.fishing-description {
+    font-size: 14px;
+
+}
+
+.hero-img {
+    max-width: 100%;
+}
+
+
+
+  /* 4. ---Main Hero Image Contact--- */
+  
+  
+  .fas {
+    font-size: 42px;
+    color: #9a2018;
+    margin: 0 auto;
+
+  }
+  
+  
+  .fa-mobile-alt {
+    margin-right: 10px;
+    margin-left: 3px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .fa-map-marker-alt {
+    margin-right: 10px;
+  }
+  
+  
+  #contact {
+    font-size: 11px;
+    background-color: #efefef;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  /* 8. ---Footer--- */
+
+
+  /*FAQ*/
+  #about-hero-con {
+    background: url(../images/about-us-hero.jpg) no-repeat;
+    height: 195px;
+ }
+ 
+ 
+ #about-hero-heading-box {
+    align-self: end;
+ }
+ 
+ 
+ #about-us-text {
+    padding-bottom: 60px;
+ }
+ 
+ 
+ #about-us-text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 22px;
+ }
+ 
+ 
+ #about-us-text-column2 {
+    font-style: italic;
+ }
+ 
+ 
+ 
+ #faq-con h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+ }
+ 
+ 
+ #faq-con h2 span {
+    color: #9a2018;
+    font-size: 16px;
+ }
+ 
+ 
+ .faq-items {
+    margin-bottom: 16px;
+ }
+ 
+ 
+ .faq-items h3 {
+    background: #e8e7e7;
+    padding: 16px;
+    font-size: 16px;
+ }
+ 
+ 
+  .faq-items ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+ 
+ 
+  .faq-items li {
+    padding: 8px 0;
+    border-bottom: 1px solid #9a2018;
+  }
+ 
+ 
+  .faq-items a {
+    color: inherit;
+    font-size: 13px;
+  }
+ 
+ 
+  #faq-text-con {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+ /*footer*/
+  #footer-hero {
+    background-image: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 40px;
+    padding-bottom: 80px;
+    width: 100%;
+
+  }
+ 
+ 
+  #footer-hero h3 {
+    margin-top: 30px;
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+ 
+ 
+  #footer-privacy .line-separator {
+    margin-top: 0px;
+    align-self: auto;
+    
+  }
+ 
+ 
+  #footer-contact-info h3 {
+    font-size: 23px;
+  }
+ 
+ 
+  #footer-contact-info p {
+    margin-bottom: 20px;
+    line-height: 18px;
+    font-size: 11px;
+  }
+ 
