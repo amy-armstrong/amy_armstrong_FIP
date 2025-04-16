@@ -230,9 +230,9 @@ body {
     font-weight: bold;
     width: 40px;
     height: 40px;
-    display: flex;               /* makes the li content (the number) center inside */
-    align-items: center;         /* vertical center */
-    justify-content: center;     /* horizontal center */         /* makes it a circle */
+    display: flex;             
+    align-items: center;         
+    justify-content: center;     
     text-align: center;
     text-decoration: none;
 }
@@ -332,8 +332,10 @@ body {
  
  
  .faq-items {
-    margin-bottom: 16px;
- }
+    max-width: 800px; /* or 600px, whatever feels right */
+    margin: 0;   /* centers the section */
+    padding: 10px;/* optional: adds some side spacing */
+  }
  
  
  .faq-items h3 {
@@ -348,7 +350,6 @@ body {
     padding: 0;
     list-style-type: none;
   }
- 
  
   .faq-items li {
     padding: 8px 0;
@@ -365,6 +366,8 @@ body {
   #faq-text-con {
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 100%;
+
   }
  /*footer*/
   #footer-hero {
