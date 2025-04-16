@@ -178,8 +178,16 @@ body {
   .image-grid {
     display: flex;   
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));         
+
     gap: 20px;               
     list-style: none;        
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px; 
+
+    gap: 20px;              
+    list-style: none;         
     justify-content: center;
     padding: 0;
     margin: 0 auto;
@@ -188,8 +196,13 @@ body {
 
 
   .image-grid img {
+
     width: 120px;            
     height: 120px;           
+    object-fit: cover;        
+
+    width: 120px;            
+    height: 120px;            
     object-fit: cover;        
     display: block;
   }
@@ -204,6 +217,7 @@ body {
   .small-text {
     font-size: 11px;
     color: #6f6e6e; 
+    color: #6f6e6e; 
     font-style: italic;
   }
   .numbered-list {
@@ -212,6 +226,7 @@ body {
     background-color: #9a2018;
     margin: 0;
     list-style-type: none;
+    justify-content: center; 
     justify-content: center; 
 }
 
@@ -329,9 +344,9 @@ body {
  
  
  .faq-items {
-    max-width: 800px; /* or 600px, whatever feels right */
-    margin: 0;   /* centers the section */
-    padding: 10px;/* optional: adds some side spacing */
+    max-width: 800px; 
+    margin: 0;  
+    padding: 10px;
   }
  
  
@@ -405,4 +420,3 @@ body {
     line-height: 18px;
     font-size: 11px;
   }
- 

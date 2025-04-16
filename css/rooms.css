@@ -1,0 +1,310 @@
+body {
+    color: #626262;
+    font-family: 'Sanchez', 'Times New Roman', serif;
+  }
+  
+  a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+  }
+  
+  input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cr-red {
+    color: #9a2018;
+  }
+
+  #main-nav label img {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .5s ease;
+    margin-bottom: 20px;
+  }
+  
+  #main-nav input, #burger-con {
+    display: none;
+  }
+  
+  /* ~ sibling selector */
+  
+  #main-nav input:checked ~ #burger-con {
+    display: block;
+  }
+  
+  #main-nav input:checked ~ label img {
+    transform: rotate(90deg);
+  }
+  
+  #main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #main-nav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #626262;
+  }
+  
+  #main-nav ul li {
+    border-bottom: 1px solid #efefef;
+  }
+  
+  #main-nav ul li:first-child {
+    border-top: 1px solid #efefef;
+  }
+  
+  #main-nav ul li:last-child {
+    margin-bottom: 40px;
+  }
+  
+  #logo {
+    margin-bottom: 20px;
+    max-width: 382px;
+  }
+  
+  /* 3. ---Main Hero Image--- */
+  
+  #hero {
+    background: url(../images/couple_robes_cr.png) no-repeat;
+    height: 200px;
+  }
+ 
+ 
+   .hero-img-h2 span, .hero-img-h3 span {
+    color: #9a2018;
+    font-size: 12px;
+  }
+  
+  .book-now {
+    background-color: #9a2018;
+    color: #fff;
+    font-size: 16px;
+    transition: all 500ms linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    cursor: pointer;
+  }
+  
+  .book-now:hover {
+    background-color: rgb(196, 28, 28);
+  }
+  
+  #book-now-hero {
+    height: 67px;
+  }
+  
+  #hero-heading-box {
+    align-self: end;
+  }
+  
+  .hero-img-h2, .hero-img-h3 {
+    background: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  
+  .hero-img-h2 span, .hero-img-h3 span {
+    color: #9a2018;
+    font-size: 12px;
+  }
+  
+  .line-separator {
+    margin-top: 20px;
+    border-top: solid 3px #CF6666;
+    padding-top: 20px;
+  }
+  
+  #hero-summary p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+ 
+  .image-grid {
+    display: flex;
+    list-style: none; 
+    padding: 0;
+    margin: 0 auto;
+    gap: 20px;
+    max-width: 600px;
+    justify-content: center;
+  }
+
+.hero-summary{
+  justify-content: center;
+}
+ 
+  #main-nav input:checked ~ label img {
+    transform: rotate(90deg);
+  }
+  
+  #main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #main-nav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #626262;
+  }
+  
+  #main-nav ul li {
+    border-bottom: 1px solid #efefef;
+  }
+  
+  #main-nav ul li:first-child {
+    border-top: 1px solid #efefef;
+  }
+  
+  #main-nav ul li:last-child {
+    margin-bottom: 40px;
+  }
+  
+  #logo {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  
+  
+  #hero {
+    background: url(../images/please_dont_disturb.png) no-repeat;
+    height: 200px;
+  }
+  
+  
+   .hero-img-h2 span, .hero-img-h3 span {
+    color: #9a2018;
+    font-size: 12px;
+  }
+  
+  #hero-heading-box, .hero-heading-description {
+    padding: 20px;
+  } 
+  
+  .book-now {
+    background-color: #9a2018;
+    color: #fff;
+    font-size: 16px;
+    transition: all 500ms linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    cursor: pointer;
+  }
+  
+  .book-now:hover {
+    background-color: rgb(196, 28, 28);
+  }
+  
+  #book-now-hero {
+    height: 67px;
+  }
+
+  .image-grid img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+
+  }
+
+  .numbered-list{
+    list-style-type: none;
+    list-style: none;
+    justify-content: center;
+    background-color: #9a2018;
+    display: flex;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .numbered-list li a{
+    color: #fff;
+    margin: auto;
+    padding: 10;
+  }
+
+  .responsive-img{
+    width: 100%;
+  }
+
+  .hero-heading-box, .hero-heading-description, .hero-summary {
+    display: block;
+    align-items: center; 
+    justify-content: center;  
+    font-size: 14px;
+  }
+
+  .image-grid {
+    justify-content: center;
+    max-width: min-content;
+    height: auto;
+  }
+
+  /* ---Contact Section--- */
+  .fas {
+    font-size: 42px;
+    color: #9a2018;
+    margin: 0 auto;
+  }
+  
+  .fa-mobile-alt, .fa-map-marker-alt {
+    margin-right: 10px;
+  }
+  
+  .fa-mobile-alt {
+    margin-bottom: 20px;
+  }
+  
+  #contact {
+    font-size: 11px;
+    background-color: #efefef;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  /* ---Footer Section--- */
+  #footer-hero {
+    background-image: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 40px;
+    padding-bottom: 80px;
+    width: 100%;
+  }
+  
+  #footer-hero h3 {
+    margin-top: 30px;
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  
+  #footer-privacy .line-separator {
+    margin-top: 0;
+  }
+  
+  #footer-contact-info h3 {
+    font-size: 23px;
+  }
+  
+  #footer-contact-info p {
+    margin-bottom: 20px;
+    line-height: 18px;
+    font-size: 11px;
+  }
