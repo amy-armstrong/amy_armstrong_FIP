@@ -1,0 +1,284 @@
+.hidden {
+    display: none;
+}
+
+.grid-con {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12-column grid */
+    gap: 20px; /* Adjust as needed */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.col-span-full {
+    grid-column: 1 / -1;
+}
+#logo {
+    margin-bottom: 20px;
+    max-width: 382px;
+  }
+  
+  #hero {
+    width: 100vw;
+    height: 600px; /* Adjust height as needed */
+    background-image: url("../images/couple_robes_cr.png"); /* Change to your image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.hero-summary {
+    padding: 30px 0;
+  }
+
+.book-now {
+    background-color: #9a2018;
+    width: 300px;
+    color: #fff;
+    font-size: 20px;
+    transition: all 500ms linear;
+    cursor: pointer;
+}
+
+#book-now-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #9a2018;
+    width: 200px;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    padding: 20px 40px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 0 rgba(196, 30, 58, 0.7);
+    transition: all 0.3s ease-in-out;
+}
+
+#book-now-hero:hover {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 0 0 rgba(196, 30, 58, 0.7);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.05);
+        box-shadow: 0 0 0 20px rgba(196, 30, 58, 0);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 0 0 rgba(196, 30, 58, 0);
+    }
+}
+
+body {
+    font-family: 'Sanchez', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: #5e4b3c;
+}
+
+h2 span {
+    font-style: italic;
+}
+
+.hero-description,
+.hero-summary {
+    margin-bottom: 40px;
+}
+
+.hero-description .small-text {
+    display: block;
+    color: #777;
+    margin-top: 10px;
+}
+
+.line-separator {
+    border-top: 2px solid #9a2018;
+}
+
+#main-nav {
+    width: 100%; /* Ensures the nav takes up full width */
+    background-color: #9a2018; /* Set a background color for the navigation */
+}
+
+#main-header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+#main-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 30px;
+    list-style-type: none;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#main-nav a:hover {
+    color: #b85c38;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 20px 0;
+}
+
+.centered-img {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    display: block;
+  }
+  
+/* CSS for displaying images horizontally */
+.image-grid {
+    display: flex;           /* Flexbox for horizontal alignment */
+    justify-content: space-evenly; /* Evenly space the images */
+    flex-wrap:nowrap;          /* Wrap images to the next line if necessary */
+    gap: 20px;                /* Gap between images */
+}
+
+.image-grid li {
+    width: 120px;
+    height:min-content;
+    overflow: hidden; /* crops anything outside bounds */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #9a2018;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(196, 30, 58, 0.7);
+    transition: all 0.3s ease-in-out;
+}
+
+
+input[type="submit"]:hover {
+animation: pulse 2s infinite;
+background-color: red;
+}
+
+@keyframes pulse {
+0% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(196, 30, 58, 0.7);
+}
+50% {
+    transform: translate(-50%, -50%) scale(1.05);
+    box-shadow: 0 0 0 20px rgba(196, 30, 58, 0);
+}
+100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(196, 30, 58, 0);
+}
+}
+
+#span .small-text{
+    font-size: 14px;
+}
+body {
+    font-family: 'Sanchez', 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
+  }
+  
+  /* Headings */
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #5e4b3c;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #5e4b3c;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #5e4b3c;
+  }
+  
+  /* Paragraphs and list items */
+  p, li {
+    font-size: 1rem;
+    text-align: left;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* Small text style */
+  .small-text {
+    font-size: 0.9rem;
+    color: #555;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  /* Sections and spacing */
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+#footer-hero{
+    background-image: url(../images/footer.jpg);
+    color: #fff;
+}
+
+#price-policy{
+    color: #fff;
+}
+
+#footer-contact-info p, h3{
+    color: #fff;
+    text-align: left;
+}
